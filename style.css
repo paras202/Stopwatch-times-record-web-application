@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: blueviolet;
+}
+
+.container{
+    background-color: aqua;
+    width: 48%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 25px 0;
+    padding-bottom: 75px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
+}
+
+.timer{
+    position: relative;
+    width: 90%;
+    background: #fff;
+    left: 5%;
+    font-family: 'Roboto mono', monospace;
+    color: #8c52ff;
+    font-size: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(65,5,145,0.25);
+}
+
+.buttons{
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button{
+    width: 120px;
+    height: 45px;
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: #e35209;
+}
+
+.buttons button:nth-child(3) {
+    background-color: #f7fd1e;
+}
+
+.buttons button:hover {
+    box-shadow: 0 0 20px green;
+}
+
+.recorded-times {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #8c52ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 220px; 
+    overflow-y: auto;
+}
+
+.recorded-times h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#times-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#times-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+#times-list button {
+    background-color: rgb(65, 65, 175);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#delete-all-btn {
+    width: 80px;
+    height: 30px;
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    bottom: 80%;
+    left: 80%; 
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+
