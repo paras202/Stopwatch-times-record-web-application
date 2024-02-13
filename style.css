@@ -129,11 +129,24 @@ body{
     left: 80%; 
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: aqua; 
+    padding: 10px 0; 
+    border-top: 2px solid #8c52ff;
+    z-index: 999;
+}
+
+
 @media screen and (max-width: 500px) {
     .container {
         width: 90%;
     }
+    footer{
+        left: 0; 
+    }
 }
-
-
 
