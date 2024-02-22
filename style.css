@@ -63,7 +63,7 @@ body{
 }
 
 .buttons button:nth-child(3) {
-    background-color: #f7fd1e;
+    background-color: lightblue;
 }
 
 .buttons button:hover {
